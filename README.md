@@ -41,9 +41,10 @@
 3. **Rename `.env.example` to `.env`**  
    Fill in the following:
    ```env
-   TOKEN=your_bot_token_here
-   CLIENT_ID=your_bot_client_id
-   GUILD_ID=your_server_id
+   CLIENT_TOKEN= 
+   CLIENT_ID=
+   DEV_ID=
+   DEV_GUILD= 
    ```
 
 4. **Install packages**
