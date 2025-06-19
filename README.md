@@ -1,106 +1,152 @@
+# CodeX Music Bot
 
-# 🎵 Discord Music Bot
+**A feature-rich Discord music bot with advanced filters, playlist management, and multiple platform support.**
 
-**This bot allows you to play high-quality music in your Discord server using commands or interactions.**.
+## Features
 
----
+- 🎵 Multi-Platform Support
+  - YouTube
+  - Spotify
+  - SoundCloud
+- 🎚️ Advanced Audio Filters
+  - 8D
+  - Bass Boost
+  - Channel Mix
+  - Distortion
+  - Karaoke
+  - Lowpass
+  - Nightcore
+  - Rotation
+  - Slow Mode
+  - Timescale
+  - Tremolo
+  - Vaporwave
+  - Vibrato
+- 📋 Playlist System
+  - Create custom playlists
+  - Add/remove songs
+  - View playlist info
+  - Play entire playlists
+- ⚙️ Advanced Settings
+  - 24/7 mode
+  - Autoplay
+  - Control buttons
+  - Custom embed colors
 
-## 📽️ Watch the Full Tutorial
+## Prerequisites
 
-> ▶️ [Click here to watch the YouTube tutorial](https://youtube.com/@GamerCodeX)
+- Node.js 16.9.0 or newer
+- MongoDB database
+- Spotify Developer account
+- Discord Bot Token
+- Lavalink server (included)
 
----
+## Setup
 
-## 📌 Features
+1. Clone this repository
+2. Install dependencies:
+```bash
+npm install
+```
 
-- 🎶 Play music from YouTube, Spotify, SoundCloud, etc.
-- 🎧 Join and leave voice channels
-- ⏯️ Pause, resume, skip, and stop songs
-- 📃 Queue system with autoplay
-- 🔊 Volume and filters support
-- 🟢 24/7 Hosting Ready
+3. Create a `.env` file with the following configuration:
+```env
+# Discord Bot Configuration
+CLIENT_TOKEN=your_bot_token
+CLIENT_ID=your_bot_id
+DEV_ID=your_discord_id  # Comma-separated for multiple IDs
+DEV_GUILD=your_guild_id  # Comma-separated for multiple guilds
 
----
+# MongoDB Configuration
+MONGO_URI=your_mongodb_uri
 
-## 🛠️ Requirements
+# Embed Color
+EMBED_COLOR=7289DA  # Hex color without #
 
-- Node.js v20
-- FFmpeg
-- Lavalink server (self-hosted or remote)
-- A Discord bot token
+# Spotify Configuration
+SPOTIFY_CLIENTID=your_spotify_client_id
+SPOTIFY_SECRET=your_spotify_client_secret
 
----
+# Default Search Platform
+DEFAULT_SEARCH_PLATFORM=spsearch  # Options: ytsearch, ytmsearch, scsearch, spsearch
+```
 
-## 📦 Installation
+## Commands
 
-1. **Download the source files**  
-   Available in the [Discord server](https://discord.gg/codexdev) and video description.
+### Music Commands
+- `/play` - Play a song or playlist
+- `/pause` - Pause current playback
+- `/resume` - Resume playback
+- `/stop` - Stop playback
+- `/skip` - Skip current track
+- `/previous` - Play previous track
+- `/queue` - View current queue
+- `/volume` - Adjust volume
+- `/lyrics` - Get song lyrics
+- `/nowplaying` - Show current track info
 
-2. **Unzip and open in Visual Studio Code**
+### Filter Commands
+- `/filter` - Apply audio filters
+- `/8d` - Toggle 8D audio effect
+- `/bassboost` - Enhance bass
+- `/nightcore` - Apply nightcore effect
+- And many more audio effects!
 
-3. **Rename `.env.example` to `.env`**  
-   Fill in the following:
-   ```env
-   CLIENT_TOKEN= 
-   CLIENT_ID=
-   DEV_ID=
-   DEV_GUILD= 
-   ```
+### Playlist Commands
+- `/pl-create` - Create a new playlist
+- `/pl-delete` - Delete a playlist
+- `/pl-addSong` - Add song to playlist
+- `/pl-removeSong` - Remove song from playlist
+- `/pl-info` - View playlist details
+- `/pl-list` - List all playlists
+- `/pl-play` - Play a playlist
 
-4. **Install packages**
+### Settings
+- `/247` - Toggle 24/7 mode
+- `/autoplay` - Toggle autoplay
+- `/controlButtons` - Toggle control buttons
 
-   ```bash
-   npm install
-   ```
+### Information
+- `/help` - Show help menu
+- `/ping` - Check bot latency
+- `/stats` - Show bot statistics
 
-5. **Run the bot**
+## Configuration
 
-   ```bash
-   node CodeX
-   ```
+The bot can be configured through the `config.js` file:
 
----
+### Lavalink Configuration
+```javascript
+riffyNodes: [
+    {
+        name: "Lavalink",
+        host: "lavalink",
+        port: port,
+        password: "pass",
+        secure: false
+    }
+]
+```
 
-## ☁️ Hosting (Optional)
+### Player Options
+```javascript
+riffyOptions: {
+    leaveTimeout: "15s",  // Bot leaves after 15s of inactivity
+    restVersion: "v4",
+    reconnectTries: Infinity,
+    reconnectTimeout: "6s",
+    defaultSearchPlatform: "spsearch"
+}
+```
 
-We recommend hosting with **[AMDX7 Host]([https:///](https://discord.gg/NZ5uNsGuZu))** — free and paid plans available.
+## Support
 
-> 💸 Use coupon code: `CODEX15` to get **15% off** on any paid plan.
+Join our Discord server for support: [discord.gg/sV5nAs4NtH](https://https//discord.gg/sV5nAs4NtH)
 
-* Zip your bot files (excluding `node_modules` and `package-lock.json`)
-* Upload to AMD-X7 or any other host
-* Set Node.js version to 20
-* Use custom startup command:
+## Credits
 
-  ```bash
-  node CodeX
-  ```
+Created by CodeX Development Team
 
----
+## License
 
-## 🆘 Need Help?
-
-Join our Discord server for:
-
-* 🔧 Troubleshooting support
-* 🎁 Free hosting giveaways
-* 🧠 Community Q\&A
-
-> [Join Gamer CodeX Discord](https://discord.gg/codexdev)
-
----
-
-## 📜 License
-
-MIT License
-Free to use, modify, and distribute — just credit Gamer CodeX.
-
----
-
-## 🙏 Credits
-
-Made with ❤️ by [Gamer CodeX](https://youtube.com/@GamerCodeX)
-
-Inspired by the community, for the community!
-
-
+This project is licensed under the MIT License.
