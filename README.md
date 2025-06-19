@@ -104,14 +104,4 @@ Made with ❤️ by [Gamer CodeX](https://youtube.com/@GamerCodeX)
 
 Inspired by the community, for the community!
 
-```
 
----
-
-Let me know if you'd like:
-- Your real Discord invite added
-- Shields like version, license, Node badge
-- Or GitHub-friendly image previews/screenshots
-
-Want me to auto-generate a `package.json` or `.env.example` too?
-```
