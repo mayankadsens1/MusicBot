@@ -1,9 +1,7 @@
 
-# 🎵 Discord Music Bot — Gamer CodeX Edition
+# 🎵 Discord Music Bot — 
 
-Welcome to the official source code for the **Discord Music Bot** featured in my YouTube video on the **Gamer CodeX** channel!
-
-This bot allows you to play high-quality music in your Discord server using commands or interactions. Powered by Node.js, Lavalink, and designed to be easily hostable on platforms like **AMD X7 Host**.
+This bot allows you to play high-quality music in your Discord server using commands or interactions. Powered by Node.js, Lavalink**.
 
 ---
 
