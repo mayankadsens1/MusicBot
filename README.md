@@ -1,7 +1,7 @@
 
 # 🎵 Discord Music Bot
 
-This bot allows you to play high-quality music in your Discord server using commands or interactions. Powered by Node.js, Lavalink**.
+**This bot allows you to play high-quality music in your Discord server using commands or interactions.**.
 
 ---
 
